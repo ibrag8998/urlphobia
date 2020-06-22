@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>
+    thanks!
+  </h1>
+  <div>
+    Short url: {{ short }}
+  </div>
+  <div>
+    Destination: {{ destination_trunc }}
+  </div>
+  <a href="{% url 'shortener:index' %}">
+    <button>Go To Main Page</button>
+  </a>
+  <a href="{{ url.destination }}">
+    <button>Go To Destination URL</button>
+  </a>
+</body>
+
+</html>
