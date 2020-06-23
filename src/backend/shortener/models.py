@@ -27,7 +27,9 @@ class URL(models.Model):
 
 
 class SlugGeneratorService:
-    symbols = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890-'
+    symbols = ('QWERTYUIOPASDFGHJKLZXCVBNM'
+               'qwertyuiopasdfghjklzxcvbnm'
+               '1234567890-_')
     length = 7
 
     @classmethod

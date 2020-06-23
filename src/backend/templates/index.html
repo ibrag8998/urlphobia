@@ -8,11 +8,11 @@
 </head>
 
 <body>
-  <h1>Hello</h1>
+  <h1>Paste your URL below</h1>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Cut</button>
+    <button type="submit">Shorten</button>
   </form>
 </body>
 
